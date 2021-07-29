@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", e => {
   })
 });
 
-//Func to form banner to submit new toys
+//form banner to submit new toys
 function hideAddToy(e){
   const addBtn = document.querySelector("#new-toy-btn");
   const toyFormContainer = document.querySelector(".container");
@@ -27,7 +27,7 @@ function hideAddToy(e){
   });
 }
 
-//func to perform GET request
+//perform GET request
 function fetchToys(){
   fetch('http://localhost:3000/toys')
   .then(resp => resp.json())
